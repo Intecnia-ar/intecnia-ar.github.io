@@ -1,0 +1,629 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #2c3c44;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+
+.header {
+    background: #111;
+    color: white;
+    padding: 15px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-icono {
+    width: 100px;  /* ajustá tamaño acá */
+    height: auto;
+    margin: 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 25px 0;
+        display: none;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    }
+
+    .menu-toggle:checked ~ .nav {
+        display: flex;
+    }
+}
+
+/* Hero*/
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 140px 0;
+    text-align: center;
+    height: 85vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.hero-logo {
+    width: 600px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 35px;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-contact {
+    background: white;
+    color: #111;
+    border: 2px solid white;
+}
+
+.btn-contact:hover {
+    background: transparent;
+    color: white;
+}
+
+.btn-service {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-service:hover {
+    background: white;
+    color: #111;
+}
+
+/* Body */
+.section {
+    padding: 80px 0;
+}
+
+.home-cards {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.35); /* oscurece un poco */
+    transition: 0.3s ease;
+}
+
+.card-overlay h3 {
+    color: white;
+    font-size: 32px;
+    text-transform: lowercase; /* si lo querés como en la imagen */
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+
+    .home-cards {
+        flex-direction: column;
+        gap: 20px; /* un poco menos de separación en mobile */
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        height: 250px; /* opcional: más chica en mobile */
+    }
+
+    .card-overlay h3 {
+        font-size: 22px; /* título más proporcionado en celular */
+    }
+
+}
+
+/* Cobertura */
+:root {
+    --primary-color: #2c3c44; /* Ajusta a tu color corporativo */
+    --accent-color: #00a8e8;
+    --text-dark: #2c3c44;
+    --text-light: #666;
+    --bg-light: #f9f9f9;
+}
+
+.cobertura-section {
+    padding: 60px 0;
+    background-color: rgb(232, 232, 232);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cobertura-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cobertura-text {
+    margin:0 50px;
+}
+
+/* Estilos de Texto */
+.badge {
+    color: var(--accent-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.cobertura-text h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin: 10px 0 20px 0;
+}
+
+.cobertura-text p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Grilla de Estadísticas */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.stat-item {
+    border-left: 3px solid var(--accent-color);
+    padding-left: 15px;
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+/* Botón */
+.btn-cobertura {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.btn-cobertura:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Estilos del Mapa */
+.cobertura-map-container {
+    position: relative;
+    text-align: center;
+    margin: 0 50px;
+}
+
+.mapa-img {
+    max-width: 100%;
+    height: 500px;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+    transition: filter 0.3s ease;
+}
+
+.mapa-img:hover {
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.15));
+}
+
+/* Responsivo para celulares */
+@media (max-width: 768px) {
+    .cobertura-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .stat-item {
+        border-left: none;
+        border-top: 3px solid var(--accent-color);
+        padding-top: 10px;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .mapa-img {
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+/* Cantacto */
+
+.contacto-profesional {
+    padding: 60px 0;
+    background-color: #f4f7f9; /* Un gris azulado muy suave */
+}
+
+.contacto-card {
+    display: flex;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    max-width: 1000px;
+    margin: auto;
+    justify-content: center; /* 👈 esto centra horizontalmente */
+    align-items: center;
+}
+
+/* Columna de Información */
+.contacto-info-wrapper {
+    flex: 1.2;
+    padding: 40px 80px;
+}
+
+.tag {
+    background: #e1f5fe;
+    color: #00a8e8;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contacto-header-min p {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+/* Listado de items */
+.info-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 30px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.item i {
+    width: 40px;
+    height: 40px;
+    background: #f0f4f8;
+    color: #003366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+.item .data small {
+    display: block;
+    color: #999;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.item .data span, .item .data a {
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Columna del Mapa */
+.mapa-wrapper-min {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 0 40px;
+}
+
+.mapa-wrapper-min iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Adaptabilidad para Móviles */
+@media (max-width: 850px) {
+
+    .contacto-card {
+        flex-direction: column;
+    }
+
+    .mapa-wrapper-min {
+        height: 200px;
+        order: 1;
+        width: 90%;          /* no ocupa todo */
+        margin: 20px auto;   /* margen arriba/abajo + centrado */
+    }
+
+    .contacto-info-wrapper {
+        padding: 30px;
+    }
+}
+
+.bg-light {
+    background: #f9f9f9;
+}
+
+/* Footer */
+
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* --SERVICIOS-- */
+
+.servicios-hero {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.servicios-hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #2c3c44;
+    margin-top: -40px;
+}
+
+.logo-servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el h1 justo debajo del logo */
+    text-align: center;
+}
+
+.servicios-lista {
+    padding: 30px 50px;
+}
+
+.servicios-lista .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    
+}
+
+.servicio-card {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    cursor: pointer;
+}
+
+.servicio-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s ease;
+}
+
+.servicio-overlay {
+    position: absolute;
+    inset: 0;
+    /* El fondo inicia un poco más claro para que se vea el h3 */
+    background: rgba(0, 0, 0, 0.4); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    /* Quitamos el opacity: 0 de aquí para que el overlay sea visible */
+    transition: 0.4s ease;
+}
+
+.servicio-overlay h3 {
+    font-size: 26px;
+    margin: 0; /* Quitamos margen inicial para centrarlo mejor */
+    transition: 0.4s ease;
+}
+
+.servicio-overlay p {
+    font-size: 16px;
+    max-width: 100%;
+    /* AQUÍ EL TRUCO: Ocultamos solo el párrafo */
+    opacity: 0;
+    max-height: 0; /* Para que no ocupe espacio visual antes de aparecer */
+    margin-top: 0;
+    transition: 0.4s ease;
+}
+
+/* --- ESTADOS HOVER --- */
+
+/* 1. Oscurecemos el fondo al entrar */
+.servicio-card:hover .servicio-overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* 2. Mostramos el párrafo y le damos su espacio */
+.servicio-card:hover .servicio-overlay p {
+    opacity: 1;
+    max-height: 100px; /* Un valor suficiente para el texto */
+    margin-top: 10px;
+}
+
+/* 3. Efecto de zoom en la imagen */
+.servicio-card:hover img {
+    transform: scale(1.1);
+}
+
+/* --- NOSOTROS--- */
+.banner-separador {
+    background-color: #c9d6dc;
+    margin: 0;
+    padding: 30px 30px;
+}
+
+.proyectos-lista {
+    padding: 30px 50px;
+    margin-bottom: 50px;
+}
+
+.proyectos-lista .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* un poco más de aire */
+}
+
+.proyectos-lista .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.container-clientes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 por fila */
+    gap: 20px; /* espacio uniforme */
+    align-items: center;
+    padding: 30px 80px;
+}
+
+.container-clientes img {
+    width: 80%;
+    height: 120px; /* altura fija */
+    object-fit: contain; /* mantiene proporción sin deformar */
+}

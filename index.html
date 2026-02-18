@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTECNIA | Servicios Técnicos Industriales</title>
+    <meta name="description" content="Servicios técnicos industriales: mantenimiento eléctrico, mecánico y soluciones integrales para empresas.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+    <div class="container">
+        
+        <img src="img/icono.png" alt="icono INTECNIA" class="header-icono">
+
+        <!-- Checkbox oculto -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <!-- Icono hamburguesa -->
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="about.html">Nosotros</a>
+            <a href="index.html#contacto">Contacto</a>
+        </nav>
+
+    </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <img src="img/logo.png" alt="Logo INTECNIA" class="hero-logo">
+            <div class="hero-buttons">
+                <a href="servicios.html" class="btn btn-service">Servicios</a>
+                <a href="#contacto" class="btn btn-outline btn-contact">Contacto</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-cards">
+        <a href="servicios.html" class="card">
+            <img src="img/servicios.jpg" alt="Servicios">
+            <div class="card-overlay">
+                <h3>Servicios</h3>
+            </div>
+        </a>
+
+        <a href="about.html" class="card">
+            <img src="img/proyectos.jpg" alt="Proyectos">
+            <div class="card-overlay">
+                <h3>Proyectos</h3>
+            </div>
+        </a>
+
+        <a href="#contacto" class="card">
+            <img src="img/contacto.jpg" alt="Contacto">
+            <div class="card-overlay">
+                <h3>Contacto</h3>
+            </div>
+        </a>
+    </section>
+
+    <section id="cobertura" class="cobertura-section">
+        <div class="container">
+            <div class="cobertura-content">
+                <div class="cobertura-text">
+                    <span class="badge">Presencia Nacional</span>
+                    <h2>Estamos en todo el país</h2>
+                    <p>Brindamos servicios técnicos y soluciones industriales de alta complejidad en todo el territorio argentino. Nuestra red logística nos permite llegar a cada planta, sin importar la ubicación.</p>
+                
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">+15</span>
+                            <span class="stat-label">Provincias</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Soporte Técnico</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Cobertura</span>
+                        </div>
+                    </div>
+
+                    <a href="#contacto" class="btn-cobertura">Consultar por mi zona</a>
+                </div>
+
+                <div class="cobertura-map-container">
+                    <img src="img/Mapa.png" alt="Mapa de cobertura Argentina" class="mapa-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto-profesional">
+        <div class="container">
+            <div class="contacto-card">
+
+                <div class="contacto-info-wrapper">
+                    <div class="contacto-header-min">
+                        <span class="tag">Contacto Directo</span>
+                        <p>Estamos a disposición para asesorarte en cada proyecto.</p>
+                    </div>
+
+                    <div class="info-links">
+                        <div class="item">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <div class="data">
+                                <small>Email</small>
+                                <a href="mailto:info@intecnia.com.ar">info@intecnia.com.ar</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <div class="data">
+                                <small>Proveedores</small>
+                                <a href="mailto:proveedores@intecnia.com.ar">proveedores@intecnia.com.ar</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-phone"></i>
+                            <div class="data">
+                                <small>Teléfono</small>
+                                <a href="https://wa.me/5491154682661" target="_blank">
+                                    +54 9 11 5468-2661
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="data">
+                                <small>Sede Central</small>
+                                <span>CABA, Argentina</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mapa-wrapper-min">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.33084931934!2d-58.3736767!3d-34.6210712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d284716447%3A0x6b40285a854d9a40!2sParque%20Lezama!5e0!3m2!1ses-419!2sar!4v1700000000000!5m2!1ses-419!2sar" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 INTECNIA - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
