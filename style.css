@@ -110,6 +110,17 @@ body {
     padding-top: 80px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    border: 0;
+}
+
 .hero-logo {
     width: 600px;
     margin-bottom: 30px;
@@ -187,7 +198,7 @@ body {
     transition: 0.3s ease;
 }
 
-.card-overlay h3 {
+.card-overlay h2 {
     color: white;
     font-size: 32px;
     text-transform: lowercase; /* si lo querés como en la imagen */
@@ -209,7 +220,7 @@ body {
         height: 250px; /* opcional: más chica en mobile */
     }
 
-    .card-overlay h3 {
+    .card-overlay h2 {
         font-size: 22px; /* título más proporcionado en celular */
     }
 
