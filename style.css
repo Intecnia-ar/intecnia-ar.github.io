@@ -524,7 +524,7 @@ img {
 }
 
 .servicios-lista {
-    padding: 30px 50px;
+    padding: 30px 30px;
 }
 
 .servicios-lista .container {
@@ -566,13 +566,13 @@ img {
 }
 
 .servicio-overlay h3 {
-    font-size: 26px;
+    font-size: 20px;
     margin: 0; /* Quitamos margen inicial para centrarlo mejor */
     transition: 0.4s ease;
 }
 
 .servicio-overlay p {
-    font-size: 16px;
+    font-size: 14px;
     max-width: 100%;
     /* AQUÍ EL TRUCO: Ocultamos solo el párrafo */
     opacity: 0;
@@ -628,13 +628,111 @@ img {
 .container-clientes {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 por fila */
-    gap: 20px; /* espacio uniforme */
+    gap: 10px; /* espacio uniforme */
     align-items: center;
-    padding: 30px 80px;
+    padding: 20px 80px;
 }
 
 .container-clientes img {
     width: 80%;
     height: 120px; /* altura fija */
     object-fit: contain; /* mantiene proporción sin deformar */
+}
+
+/* ---- Media Query SERVICIOS -----*/
+
+
+@media (max-width: 768px){
+    .servicio-overlay p{
+        font-size:14px;
+    }
+    .proyectos-lista .servicio-overlay h3{
+        font-size:16px;
+    }
+    .proyectos-lista .servicio-overlay p{
+        font-size:12px;
+    }
+    .container-clientes {
+        gap: 0px; /* espacio uniforme */
+        padding: 0px 50px;
+    }
+}
+@media (max-width: 690px){
+    .servicios-lista .container{
+        grid-template-columns: 1fr;
+        gap:30px;
+    }
+    .container-clientes {
+        grid-template-columns: repeat(3, 1fr); /* 4 por fila */
+        align-items: center;
+        gap: 0px; /* espacio uniforme */
+        padding: 10px 50px;
+    }
+    .container-clientes img {
+        width: 80%;
+        height: 100px;
+    }
+}
+@media (max-width: 530px){
+    .servicios-hero h1 {
+        font-size: 32px;
+    }
+    .footer .container p{
+        font-size: 14px;
+    }
+    .container-clientes img {
+        width: 90%;
+        height: 90px;
+    }
+}
+@media (max-width: 475px){
+    .servicios-hero h1 {
+        font-size: 28px;
+    }
+    .servicios-lista {
+        margin-top: 30px;
+    }
+    .container-clientes img {
+        width: 90%;
+        height: 80px;
+    }
+}
+@media (max-width: 375px){
+    .container-clientes {
+        gap: 16px;
+        margin-top: 10px;
+    }
+    .container-clientes img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* ----- Media Query NOSOTROS ----- */
+
+@media (max-width: 768px){
+    .banner-separador {
+        padding: 16px 30px;
+    }
+}
+@media (max-width: 690px){
+    .proyectos-lista .container{
+        grid-template-columns: repeat(2, 1fr);
+        gap:30px;
+        padding: 10px 10px;
+    }
+}
+@media (max-width: 530px){
+    .proyectos-lista .container{
+        grid-template-columns: 1fr;
+        gap:30px;
+    }
+}
+@media (max-width: 475px){
+    .banner-separador h3{
+        font-size: 16px;
+    }
+     .proyectos-lista .container{
+        padding: 10px 0px;
+    }
 }
