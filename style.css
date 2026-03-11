@@ -707,6 +707,9 @@ img {
     .servicios-lista {
         margin-top: 30px;
     }
+    .container-clientes {
+        padding: 10px 40px;
+    }
     .container-clientes img {
         width: 90%;
         height: 80px;
