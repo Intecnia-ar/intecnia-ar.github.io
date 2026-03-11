@@ -639,40 +639,47 @@ img {
     object-fit: contain; /* mantiene proporción sin deformar */
 }
 
-/* ---- Media Query SERVICIOS -----*/
-
+/* ----- Media Query ----- */
 
 @media (max-width: 768px){
-    .servicio-overlay p{
-        font-size:14px;
-    }
     .proyectos-lista .servicio-overlay h3{
         font-size:16px;
     }
     .proyectos-lista .servicio-overlay p{
-        font-size:12px;
+        font-size:14px;
     }
     .container-clientes {
-        gap: 0px; /* espacio uniforme */
+        gap: 0px;
         padding: 0px 50px;
     }
+    .banner-separador {
+        padding: 16px 30px;
+    }
 }
+
 @media (max-width: 690px){
+
     .servicios-lista .container{
         grid-template-columns: 1fr;
         gap:30px;
     }
     .container-clientes {
-        grid-template-columns: repeat(3, 1fr); /* 4 por fila */
+        grid-template-columns: repeat(3, 1fr);
         align-items: center;
-        gap: 0px; /* espacio uniforme */
+        gap: 0px;
         padding: 10px 50px;
     }
     .container-clientes img {
         width: 80%;
         height: 100px;
     }
+    .proyectos-lista .container{
+        grid-template-columns: repeat(2, 1fr);
+        gap:30px;
+        padding: 10px 10px;
+    }
 }
+
 @media (max-width: 530px){
     .servicios-hero h1 {
         font-size: 32px;
@@ -684,8 +691,16 @@ img {
         width: 90%;
         height: 90px;
     }
+    .proyectos-lista .container{
+        grid-template-columns: 1fr;
+        gap:30px;
+    }
 }
+
 @media (max-width: 475px){
+    .hero {
+        max-height: 80vh;
+    }
     .servicios-hero h1 {
         font-size: 28px;
     }
@@ -696,7 +711,14 @@ img {
         width: 90%;
         height: 80px;
     }
+    .banner-separador h3{
+        font-size: 16px;
+    }
+    .proyectos-lista .container{
+        padding: 10px 0px;
+    }
 }
+
 @media (max-width: 375px){
     .container-clientes {
         gap: 16px;
@@ -705,34 +727,5 @@ img {
     .container-clientes img {
         width: 100%;
         height: 100%;
-    }
-}
-
-/* ----- Media Query NOSOTROS ----- */
-
-@media (max-width: 768px){
-    .banner-separador {
-        padding: 16px 30px;
-    }
-}
-@media (max-width: 690px){
-    .proyectos-lista .container{
-        grid-template-columns: repeat(2, 1fr);
-        gap:30px;
-        padding: 10px 10px;
-    }
-}
-@media (max-width: 530px){
-    .proyectos-lista .container{
-        grid-template-columns: 1fr;
-        gap:30px;
-    }
-}
-@media (max-width: 475px){
-    .banner-separador h3{
-        font-size: 16px;
-    }
-     .proyectos-lista .container{
-        padding: 10px 0px;
     }
 }
