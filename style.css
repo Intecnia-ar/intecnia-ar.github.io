@@ -463,6 +463,7 @@ img {
     align-items: center;
     overflow: hidden;
     border-radius: 8px;
+    padding: 10px 50px;
 }
 
 .mapa-wrapper-min iframe {
@@ -475,13 +476,6 @@ img {
 
     .contacto-card {
         flex-direction: column;
-    }
-
-    .mapa-wrapper-min {
-        height: 200px;
-        order: 1;
-        width: 90%;          /* no ocupa todo */
-        margin: 20px auto;   /* margen arriba/abajo + centrado */
     }
 
     .contacto-info-wrapper {
@@ -643,6 +637,9 @@ img {
 /* ----- Media Query ----- */
 
 @media (max-width: 768px){
+    .mapa-wrapper-min {
+        padding: 30px 40px;
+    }
     .proyectos-lista .servicio-overlay h3{
         font-size:16px;
     }
