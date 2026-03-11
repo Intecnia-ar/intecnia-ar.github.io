@@ -458,15 +458,16 @@ img {
     width: 100%;
     max-width: 500px;
     height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     border-radius: 8px;
-    padding: 0 40px;
 }
 
 .mapa-wrapper-min iframe {
     width: 100%;
     height: 100%;
-    display: block;
 }
 
 /* Adaptabilidad para Móviles */
@@ -722,7 +723,10 @@ img {
     }
 }
 
-@media (max-width: 375px){
+@media (max-width: 378px){
+    .hero .hero-buttons a{
+        margin: 5px 5px;
+    }
     .container-clientes {
         gap: 16px;
         margin-top: 10px;
