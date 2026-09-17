@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTECNIA Argentina | Servicios Técnicos Integrales para Empresas</title>
-    <meta name="description" content="INTECNIA Argentina brinda servicios técnicos integrales, mantenimiento, instalaciones y soluciones llave en mano para empresas, industrias y consorcios en todo el país.">
+    <title>INTECNIA Argentina | Soluciones Técnicas</title>
+
+    <meta name="description" content="Servicios técnicos integrales para empresas, industrias y consorcios en Argentina. Diagnóstico, mantenimiento e intervenciones especializadas.">
+
     <!-- Open Graph -->
     <meta property="og:title" content="INTECNIA Argentina">
-    <meta property="og:description" content="Servicios técnicos integrales para empresas, industrias y consorcios en Argentina.">
+    <meta property="og:description" content="Soluciones técnicas para edificios y plantas.">
     <meta property="og:url" content="https://intecnia.com.ar">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://intecnia.com.ar/img/logo.png">
-    
+
     <link rel="canonical" href="https://intecnia.com.ar/">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <!-- Datos estructurados -->
     <script type="application/ld+json">
     {
@@ -31,11 +35,13 @@
     }
     </script>
 </head>
+
 <body>
-    <header class="header">
-    <div class="container">
-        
-        <img src="img/icono.png" alt="icono INTECNIA" class="header-icono">
+<!-- HEADER -->
+<header class="header">
+    <div class="container nav-content">
+
+        <img src="img/icono.png" class="logo-nav" alt="INTECNIA">
 
         <!-- Checkbox oculto -->
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -48,50 +54,200 @@
         </label>
 
         <nav class="nav">
-            <a href="index.html">Inicio</a>
+            <a href="index.html" class="active">Inicio</a>
             <a href="servicios.html">Servicios</a>
             <a href="about.html">Nosotros</a>
             <a href="index.html#contacto">Contacto</a>
         </nav>
 
+        <div class="contact-top">
+            <a href="https://wa.me/5491154682661" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
     </div>
-    </header>
-    
-    <section class="hero">
-        <h1 class="visually-hidden">INTECNIA Argentina</h1>
-        <div class="hero-content">
-            <img src="img/logo.png" alt="Logo INTECNIA" class="hero-logo">
-            <div class="hero-buttons">
-                <a href="servicios.html" class="btn btn-service">Servicios</a>
-                <a href="#contacto" class="btn btn-outline btn-contact">Contacto</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="overlay"></div>
+
+    <h1 class="visually-hidden">INTECNIA Argentina</h1>
+
+    <div class="hero-content">
+
+        <!-- LOGO PRINCIPAL -->
+        <img src="img/logo.png" alt="INTECNIA" class="hero-logo">
+
+        <div class="hero-buttons">
+            <a href="#contacto" class="btn btn-primary">Solicitar visita</a>
+            <a href="servicios.html" class="btn btn-secondary">Ver servicios</a>
+        </div>
+    </div>    
+</section>
+
+<!-- SERVICIOS -->
+ <section class="servicios-home">
+    <div class="container">
+
+        <div class="title">
+            <span></span>
+            <h2>Nuestros Servicios</h2>
+            <span></span>
+        </div>
+
+        <div class="grid-4">
+            <div class="card">
+                <div class="icon"><i class="fas fa-house"></i></div>
+                <h3>Obras llave en mano</h3>
+                <p>Ejecución integral de proyectos, desde el diseño hasta la entrega final.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon"><i class="fas fa-helmet-safety"></i></div>
+                <h3>Trabajos en altura</h3>
+                <p>Intervenciones seguras en estructuras complejas.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon"><i class="fas fa-gears"></i></div>
+                <h3>Intervenciones técnicas</h3>
+                <p>Reparaciones, provisión e instalación de equipos y sistemas.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon"><i class="fas fa-screwdriver-wrench"></i></div>
+                <h3>Mantenimiento</h3>
+                <p>Servicios de mantenimiento preventivo y correctivo.</p>
             </div>
         </div>
-    </section>
 
-    <section class="home-cards">
-        <a href="servicios.html" class="card">
-            <img src="img/servicios.jpg" alt="Servicios técnicos para empresas en Argentina">
-            <div class="card-overlay">
-                <h2>Servicios</h2>
+        <div class="servicios-footer">
+            <a href="servicios.html" class="btn-servicios">Ver más servicios</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROCESO -->
+<section class="proceso">
+    <div class="container">
+
+        <div class="title title-proceso">
+            <span></span>
+            <h2>Nuestro Proceso</h2>
+            <span></span>
+        </div>
+
+<div class="grid-proceso">
+
+    <div class="step">
+        <div class="number">1</div>
+        <div class="icon-container"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <h3>Relevamiento</h3>
+        <div class="divider"></div>
+        <p>Inspección inicial y análisis de la situación.</p>
+    </div>
+
+    <div class="arrow">›</div>
+
+    <div class="step">
+        <div class="number">2</div>
+        <div class="icon-container"><i class="fa-regular fa-clipboard"></i></div>
+        <h3>Diagnóstico</h3>
+        <div class="divider"></div>
+        <p>Evaluación técnica para definir la mejor solución.</p>
+    </div>
+
+    <div class="arrow">›</div>
+
+    <div class="step">
+        <div class="number">3</div>
+        <div class="icon-container"><i class="fa-regular fa-file-lines"></i></div>
+        <h3>Propuesta</h3>
+        <div class="divider"></div>
+        <p>Presentación de plan de trabajo y presupuesto.</p>
+    </div>
+
+    <div class="arrow">›</div>
+
+    <div class="step">
+        <div class="number">4</div>
+        <div class="icon-container"><i class="fa-regular fa-circle-check"></i></div>
+        <h3>Ejecución</h3>
+        <div class="divider"></div>
+        <p>Realización del servicio con seguimiento y control.</p>
+    </div>
+</div>
+        <!-- <div class="grid-proceso">
+
+            <div class="step">
+                <div class="number">1</div>
+                <h3>Relevamiento</h3>
+                <p>Inspección inicial y análisis de la situación.</p>
             </div>
-        </a>
 
-        <a href="about.html" class="card">
-            <img src="img/proyectos.jpg" alt="Proyectos INTECNIA">
-            <div class="card-overlay">
-                <h2>Proyectos</h2>
+            <div class="arrow">›</div>
+
+            <div class="step">
+                <div class="number">2</div>
+                <h3>Diagnóstico</h3>
+                <p>Evaluación técnica para definir la mejor solución.</p>
             </div>
-        </a>
 
-        <a href="#contacto" class="card">
-            <img src="img/contacto.jpg" alt="Contactos INTECNIA">
-            <div class="card-overlay">
-                <h2>Contacto</h2>
+            <div class="arrow">›</div>
+
+            <div class="step">
+                <div class="number">3</div>
+                <h3>Propuesta</h3>
+                <p>Presentación de plan de trabajo y presupuesto.</p>
             </div>
-        </a>
-    </section>
 
-    <section id="cobertura" class="cobertura-section">
+            <div class="arrow">›</div>
+
+            <div class="step">
+                <div class="number">4</div>
+                <h3>Ejecución</h3>
+                <p>Realización del servicio con seguimiento y control.</p>
+            </div>
+
+        </div> -->
+
+    </div>
+</section>
+
+<!-- CLIENTES -->
+<section class="clientes">
+    <div class="overlay">
+        <div class="container">
+            <h2>Empresas que confian en nosotros</h2>
+
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="logo_cliente"><img src="img/PANALAB.png"></div>
+                    <div class="logo_cliente"><img src="img/CARRIER.png"></div>
+                    <div class="logo_cliente"><img src="img/ENAS.png"></div>
+                    <div class="logo_cliente"><img src="img/COPPEL.png"></div>
+                    <div class="logo_cliente"><img src="img/FUCHS.png"></div>
+                    <div class="logo_cliente"><img src="img/ENERSYS.png"></div>
+                    <div class="logo_cliente"><img src="img/LIEBHERR.png"></div>
+                    <div class="logo_cliente"><img src="img/Pan_American.png"></div>
+                    <div class="logo_cliente"><img src="img/ALTATEX.png"></div>
+                    <div class="logo_cliente"><img src="img/BAYTON.png"></div>
+                    <div class="logo_cliente"><img src="img/GENNEIA.png"></div>
+                    <div class="logo_cliente"><img src="img/LOGINTER.png"></div>
+                    <div class="logo_cliente"><img src="img/TELECENTRO.png"></div>
+                    <div class="logo_cliente"><img src="img/SCIENZA.png"></div>
+                    <div class="logo_cliente"><img src="img/CERAMICAS.png"></div>
+                    <div class="logo_cliente"><img src="img/mercado.png"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- COBERTURA -->
+<section id="cobertura" class="cobertura-section">
         <div class="container">
             <div class="cobertura-content">
                 <div class="cobertura-text">
@@ -99,22 +255,29 @@
                     <h2>Estamos en todo el país</h2>
                     <p>Brindamos servicios técnicos y soluciones industriales de alta complejidad en todo el territorio argentino. Nuestra red logística nos permite llegar a cada planta, sin importar la ubicación.</p>
                 
-                    <div class="stats-grid">
+                    <div class="stats-grid"> 
                         <div class="stat-item">
-                            <span class="stat-number">+15</span>
-                            <span class="stat-label">Provincias</span>
+                            <div class="stat-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <span class="stat-number">+15</span>
+                                <span class="stat-label">Provincias</span>
+                            </div>
                         </div>
+                    
                         <div class="stat-item">
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label">Soporte Técnico</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Cobertura</span>
+                            <div class="stat-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div>
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Cobertura</span>
+                            </div>
                         </div>
                     </div>
 
-                    <a href="#contacto" class="btn-cobertura">Consultar por mi zona</a>
+                    <a href="#contacto" class="btn btn-primary btn-cobertura">Consultar por mi zona</a>
                 </div>
 
                 <div class="cobertura-map-container">
@@ -122,68 +285,89 @@
                 </div>
             </div>
         </div>
-    </section>
+</section>
 
-    <section id="contacto" class="contacto-profesional">
-        <div class="container">
-            <div class="contacto-card">
-
-                <div class="contacto-info-wrapper">
-                    <div class="contacto-header-min">
-                        <span class="tag">Contacto Directo</span>
-                        <p>Estamos a disposición para asesorarte en cada proyecto.</p>
+<!-- CONTACTO -->
+<section id="contacto" class="contacto-profesional">
+    <div class="container">
+        <div class="contacto-card">
+            <div class="contacto-info-wrapper">
+                <div class="contacto-header-min">
+                    <span class="tag">Contacto Directo</span>
+                    <p>Estamos a disposición para asesorarte en cada proyecto.</p>
+                </div>
+                <div class="info-links">
+                    <div class="item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="data">
+                            <small>Email</small>
+                            <a href="mailto:ventas@intecnia.com.ar">ventas@intecnia.com.ar</a>
+                        </div>
                     </div>
-                    <div class="info-links">
-                        <div class="item">
-                            <i class="fas fa-envelope"></i>
-                            <div class="data">
-                                <small>Email</small>
-                                <a href="mailto:info@intecnia.com.ar">ventas@intecnia.com.ar</a>
-                            </div>
+                    <div class="item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div class="data">
+                            <small>Teléfono</small>
+                            <a href="https://wa.me/5491154682661" target="_blank">
+                                +54 9 11 5468-2661
+                            </a>
                         </div>
-                        <div class="item">
-                            <i class="fa-brands fa-whatsapp"></i>
-                            <div class="data">
-                                <small>Teléfono</small>
-                                <a href="https://wa.me/5491154682661" target="_blank">
-                                    +54 9 11 5468-2661
-                                </a>
-                            </div>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="data">
+                            <small>Sede Central</small>
+                            <span>CABA, Argentina</span>
                         </div>
-                        <div class="item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="data">
-                                <small>Sede Central</small>
-                                <span>CABA, Argentina</span>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <i class="fas fa-envelope"></i>
-                            <div class="data">
-                                <small>Proveedores</small>
-                                <a href="mailto:proveedores@intecnia.com.ar">proveedores@intecnia.com.ar</a>
-                            </div>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="data">
+                            <small>Proveedores</small>
+                            <a href="mailto:proveedores@intecnia.com.ar">proveedores@intecnia.com.ar</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="mapa-wrapper-min">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.33084931934!2d-58.3736767!3d-34.6210712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d284716447%3A0x6b40285a854d9a40!2sParque%20Lezama!5e0!3m2!1ses-419!2sar!4v1700000000000!5m2!1ses-419!2sar" 
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                    </iframe>
-                </div>
-
             </div>
+            <!-- FORM -->
+            <form class="contact-form"
+                  action="https://formspree.io/f/xdekoeao"
+                  method="POST">
+                    
+                <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Nombre"
+                    required>
+                    
+                <input
+                    type="tel"
+                    name="telefono"
+                    placeholder="Teléfono"
+                    required>
+                    
+                <textarea
+                    name="mensaje"
+                    placeholder="Mensaje"
+                    rows="5"
+                    required></textarea>
+                    
+                <button type="submit" class="btn primary">
+                    Enviar consulta
+                </button>
+            
+            </form>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>© 2025 INTECNIA - Todos los derechos reservados</p>
-        </div>
-    </footer>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 INTECNIA - Todos los derechos reservados</p>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -17,7 +17,8 @@
 
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- Datos estructurados -->
     <script type="application/ld+json">
     {
@@ -33,150 +34,250 @@
     </script>
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
-    <div class="container">
-        
-        <img src="img/icono.png" alt="icono INTECNIA" class="header-icono">
+        <div class="container nav-content">
 
-        <!-- Checkbox oculto -->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <img src="img/icono.png" class="logo-nav" alt="INTECNIA">
 
-        <!-- Icono hamburguesa -->
-        <label for="menu-toggle" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+            <!-- Checkbox oculto -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-        <nav class="nav">
-            <a href="index.html">Inicio</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="about.html">Nosotros</a>
-            <a href="index.html#contacto">Contacto</a>
-        </nav>
+            <!-- Icono hamburguesa -->
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-    </div>
+            <nav class="nav">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="about.html" class="active">Nosotros</a>
+                <a href="index.html#contacto">Contacto</a>
+            </nav>
+
+            <div class="contact-top">
+                <a href="https://wa.me/5491154682661" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+        </div>
     </header>
-
-    <section class="servicios-hero">
-        <div class="container">
-            <div class="logo-servicio">
-                <img src="img/logo4.png" alt="Servicios INTECNIA" class="hero-logo">
-                <h1>Nosotros</h1>
-            </div>
+    <!-- HERO -->
+    <section class="hero-about">
+        <div class="hero-content-service">
+            <span class="hero-tag">
+                NOSOTROS
+            </span>
+        
+            <h1 class="hero-title">
+                 SOBRE INTECNIA
+            </h1>
         </div>
     </section>
-
+    <!-- PROYECTOS -->
     <section class="proyectos">
-        <div class="banner-separador">
-            <h3>PROYECTOS</h3>
+        <div class="title">
+            <span></span>
+            <h2>Proyectos</h2>
+            <span></span>
         </div>
-    </section>
-
-    <section class="proyectos-lista">
-        <div class="container">
-            <div class="servicio-card">
-                <img src="img/Obra-Civil_SV.jpg" alt="San Vicente">
-                <div class="servicio-overlay">
-                    <h3>Obra Civil - San Vicente, Bs. As.</h3>
-                    <p>Casa con 2 dormitorios. Electricidad, plomeria, albañileria y pintura</p>
+        <div class="grid-proyectos">
+            <div class="card">
+                <img src="img/Obra-Civil_SV.jpg" alt="Casa Residencial">
+            
+                <div class="overlay">
+                    <h3>Casa Residencial</h3>
+                    <p>Obra llave en mano.</p>
+                    <p>Electricidad, plomeria, albañileria y pintura.</p>
+                    <span>San Vicente, Buenos Aires</span>
                 </div>
             </div>
-
-            <div class="servicio-card">
-                <img src="img/aireacond.jpg" alt="Refrigeración">
-                <div class="servicio-overlay">
-                    <h3>Mantenimiento AA - Tigre, Bs. As.</h3>
-                    <p>Mantenimiento preventivo y correctivo.</p>  
-                </div>
-            </div>
-
-            <div class="servicio-card">
+            <div class="card">
                 <img src="img/impermeabilizacion.jpg" alt="Impermeabilización">
-                <div class="servicio-overlay">
-                    <h3>Impermeabilización - Rosario, Santa Fe.</h3>
+            
+                <div class="overlay">
+                    <h3>Impermeabilización</h3>
                     <p>Limpieza, remoción e impermeabilización completa.</p>
+                    <span>Rosario, Santa Fe</span>
                 </div>
             </div>
-
-            <div class="servicio-card">
-                <img src="img/electricidad.jpg" alt="Electricidad">
-                <div class="servicio-overlay">
-                    <h3>Intalación eléctrica - Korn, Bs. As.</h3>
-                    <p>Instalación de elevador de tensión eléctrica.
+            <div class="card">
+                <img src="img/mantenimiento.jpg" alt="Mantenimiento Edilicio">
+            
+                <div class="overlay">
+                    <h3>Mantenimiento Edilicio.</h3>
+                    <p>Mantenimiento preventivo y correctivo en piso de oficinas.</p>
+                    <span>Belgrano, CABA</span>
                 </div>
             </div>
-
-            <div class="servicio-card">
-                <img src="img/mantenimiento.jpg" alt="Mantenimiento-Belgrano">
-                <div class="servicio-overlay">
-                    <h3>Mantenimiento - Belgrano, CABA.</h3>
-                    <p>Mantenimiento preventivo y correctivo de todas las instalaciones.</p>
+            <div class="card">
+                <img src="img/aireacond.jpg" alt="Aire acondicionado">
+            
+                <div class="overlay">
+                    <h3>Instalación y Mantenimiento de AA.</h3>
+                    <p>Mantenimiento preventivo y correctivo. Equipos split y VRV.</p>
+                    <span>Tigre, Buenos Aires</span>
                 </div>
             </div>
-
-            <div class="servicio-card">
-                <img src="img/heladera.jpg" alt="heladera">
-                <div class="servicio-overlay">
-                    <h3>Reparación - Tigre, Bs As.</h3>
-                    <p>Provisión e instalación de cierre.</p>
+            <div class="card">
+                <img src="img/electricidad.jpg" alt="Instalación eléctrica">
+            
+                <div class="overlay">
+                    <h3>Instalación Eléctrica.</h3>
+                    <p>Instalación de elevador de tensión eléctrica.</p>
+                    <span>Korn, Buenos Aires</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/durlock.jpeg" alt="Reparación Durlock">
+            
+                <div class="overlay">
+                    <h3>Reparación Durlock</h3>
+                    <p>Reemplazo, adecuación y pintura de nicho de exhibición.</p>
+                    <span>Tigre, Buenos Aires</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/caldera2.png" alt="Mantenimiento caldera">
+            
+                <div class="overlay">
+                    <h3>Mantenimiento de caldera industrial</h3>
+                    <p>Mantenimiento preventivo y correctivo.</p>
+                    <span>Área de producción El Triangulo, Buenos Aires</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/tanque.png" alt="Limpieza tanque">
+            
+                <div class="overlay">
+                    <h3>Limpieza de tanque de agua</h3>
+                    <p>Trabajo en altura con certificación.</p>
+                    <span>Villa María, Córdoba.</span>
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- CLIENTES -->
     <section class="clientes">
-        <div class="banner-separador">
-            <h3>CLIENTES QUE NOS ELIGEN</h3>
-        </div>
-        <div class="container-clientes">
-            <img src="img/PANALAB.png" alt="Servicios INTECNIA" class="hero-logo">
-            <img src="img/CARRIER.png" alt="Servicios INTECNIA" class="hero-logo">
-            <img src="img/ENAS.png" alt="Servicios INTECNIA" class="hero-logo">
-            <img src="img/COPPEL.png" alt="Servicios INTECNIA" class="hero-logo">
-            <img src="img/FUCHS.png" alt="Servicios INTECNIA" class="hero-logo">
-            <img src="img/ENERSYS.png" alt="Servicios INTECNIA" class="hero-logo">
-            <img src="img/LIEBHERR.png" alt="Servicios INTECNIA" class="hero-logo">
-            <img src="img/mercado.png" alt="Servicios INTECNIA" class="hero-logo">
+        <div class="overlay">
+            <div class="container">
+                <h2>Empresas que confian en nosotros</h2>
+
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="logo_cliente"><img src="img/PANALAB.png"></div>
+                        <div class="logo_cliente"><img src="img/CARRIER.png"></div>
+                        <div class="logo_cliente"><img src="img/ENAS.png"></div>
+                        <div class="logo_cliente"><img src="img/COPPEL.png"></div>
+                        <div class="logo_cliente"><img src="img/FUCHS.png"></div>
+                        <div class="logo_cliente"><img src="img/ENERSYS.png"></div>
+                        <div class="logo_cliente"><img src="img/LIEBHERR.png"></div>
+                        <div class="logo_cliente"><img src="img/Pan_American.png"></div>
+                        <div class="logo_cliente"><img src="img/ALTATEX.png"></div>
+                        <div class="logo_cliente"><img src="img/BAYTON.png"></div>
+                        <div class="logo_cliente"><img src="img/GENNEIA.png"></div>
+                        <div class="logo_cliente"><img src="img/LOGINTER.png"></div>
+                        <div class="logo_cliente"><img src="img/TELECENTRO.png"></div>
+                        <div class="logo_cliente"><img src="img/SCIENZA.png"></div>
+                        <div class="logo_cliente"><img src="img/CERAMICAS.png"></div>
+                        <div class="logo_cliente"><img src="img/mercado.png"></div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
-
-    <div class="banner-separador">
-        <h3>COBERTURA</h3>
-    </div>
-    <section id="cobertura" class="cobertura-section">
+    <!-- PROCESO -->
+    <section class="proceso">
         <div class="container">
-            <div class="cobertura-content">
-                <div class="cobertura-text">
-                    <span class="badge">Presencia Nacional</span>
-                    <h2>Estamos en todo el país</h2>
-                    <p>Brindamos servicios técnicos y soluciones industriales de alta complejidad en todo el territorio argentino. Nuestra red logística nos permite llegar a cada planta, sin importar la ubicación.</p>
+            <div class="title title-proceso">
+                <span></span>
+                <h2>Nuestro Proceso</h2>
+                <span></span>
+            </div>
+            <div class="grid-proceso">
+                <div class="step">
+                    <div class="number">1</div>
+                    <div class="icon-container"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <h3>Relevamiento</h3>
+                    <div class="divider"></div>
+                    <p>Inspección inicial y análisis de la situación.</p>
+                </div>
+    
+                <div class="arrow">›</div>
+            
+                <div class="step">
+                    <div class="number">2</div>
+                    <div class="icon-container"><i class="fa-regular fa-clipboard"></i></div>
+                    <h3>Diagnóstico</h3>
+                    <div class="divider"></div>
+                    <p>Evaluación técnica para definir la mejor solución.</p>
+                </div>
+            
+                <div class="arrow">›</div>
+            
+                <div class="step">
+                    <div class="number">3</div>
+                    <div class="icon-container"><i class="fa-regular fa-file-lines"></i></div>
+                    <h3>Propuesta</h3>
+                    <div class="divider"></div>
+                    <p>Presentación de plan de trabajo y presupuesto.</p>
+                </div>
+            
+                <div class="arrow">›</div>
+            
+                <div class="step">
+                    <div class="number">4</div>
+                    <div class="icon-container"><i class="fa-regular fa-circle-check"></i></div>
+                    <h3>Ejecución</h3>
+                    <div class="divider"></div>
+                    <p>Realización del servicio con seguimiento y control.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COBERTURA -->
+    <section id="cobertura" class="cobertura-section">
+            <div class="container">
+                <div class="cobertura-content">
+                    <div class="cobertura-text">
+                        <span class="badge">Presencia Nacional</span>
+                        <h2>Estamos en todo el país</h2>
+                        <p>Brindamos servicios técnicos y soluciones industriales de alta complejidad en todo el territorio argentino. Nuestra red logística nos permite llegar a cada planta, sin importar la ubicación.</p>
+                    
+                        <div class="stats-grid"> 
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <span class="stat-number">+15</span>
+                                    <span class="stat-label">Provincias</span>
+                                </div>
+                            </div>
+                        
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div>
+                                    <span class="stat-number">100%</span>
+                                    <span class="stat-label">Cobertura</span>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <span class="stat-number">+15</span>
-                            <span class="stat-label">Provincias</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label">Soporte Técnico</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Cobertura</span>
-                        </div>
+                        <a href="index.html#contacto" class="btn btn-primary btn-cobertura">Consultar por mi zona</a>
                     </div>
 
-                    <a href="index.html#contacto" class="btn-cobertura">Consultar por mi zona</a>
-                </div>
-
-                <div class="cobertura-map-container">
-                    <img src="img/Mapa.png" alt="Mapa de cobertura Argentina" class="mapa-img">
+                    <div class="cobertura-map-container">
+                        <img src="img/Mapa.png" alt="Mapa de cobertura Argentina" class="mapa-img">
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
-
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <p>© 2025 INTECNIA - Todos los derechos reservados</p>
